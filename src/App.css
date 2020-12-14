@@ -1,38 +1,198 @@
+/* @media only screen and (max-width: 600px) {
+
+}
+
+@media only screen and (min-width: 600px) {
+
+
+
 .App {
   text-align: center;
-}
+  width: 100%;
+} */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/******************** NAV **********************/
+
+.nav1 {
+  padding: 5px 10px;
+  width: 100%;
+  position: fixed;
+  top: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: white;
+  z-index: 100;
+}
+
+.nav1-ul {
+  margin: 0 0 auto auto;
+  display: flex;
+  justify-content: space-between;
+  float: right;
+}
+
+.nav1-ul li {
+  list-style-type: none;
+  text-align: center;
+  padding: 2px 25px;
+  background-color: rgb(48, 141, 48);
+  border-radius: 50%;
+  margin: 0 18px 0 0;
+}
+
+.nav1-links {
   color: white;
+  text-decoration: none;
+  /* width: 10px; */
 }
 
-.App-link {
-  color: #61dafb;
+.nav1 a:hover {
+  color: rgb(202, 202, 202);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav2 {
+  /* background-color: rgb(201, 199, 199); */
+  border-bottom: 1px solid black;
+  /* padding: 10px; */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  margin: 70px auto 0 auto;
+  padding: 10px 10px;
+  position: fixed;
+  background-color: white;
+  z-index: 100;
+}
+
+.nav2-ul {
+  margin: 0 0 auto auto;
+  display: flex;
+  /* justify-content: space-evenly; */
+  /* float: left; */
+}
+
+.nav2-ul li {
+  /* background-color: yellowgreen ; */
+  list-style-type: none;
+  text-align: center;
+  padding: 0 30px;
+}
+
+.nav2-links {
+  color: black;
+  font-weight: bold;
+  width: 10px;
+  text-decoration: none;
+}
+
+.nav2 a:hover {
+  color: rgb(107, 105, 105);
+}
+
+.logoArea {
+  display: flex;
+  margin: 20px 0;
+}
+
+.logo {
+  width: 80px;
+  height: 40px;
+  margin: auto 0;
+}
+
+.account {
+  width: 25px;
+}
+
+
+/**************** 1ST SECTIONS ********************/
+
+.sections {
+  min-height: 300px;
+  padding: 10px;
+  margin: 13% auto 0 auto;
+  width: 100%;
+}
+
+/******************** FOOTER **********************/
+
+.site-footer {
+  /* background-color:rgb(54, 53, 53); */
+  border-top: 1px solid black;
+  padding: 10px 10px 0 10px;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  /* height: 40px; */
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 700px;
+  margin: auto;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+footer .footerLinks {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footerLogo {
+  margin: 20px 20px 0px 20px;
+  display: flex;
+}
+
+/*************** SOCIAL MEDIA FOOTER *************/
+
+/* #lab_social_icon_footer {
+  padding: 0px 0;
+  background-color: #dedede;
+} */
+
+#lab_social_icon_footer a {
+  color: #333;
+}
+
+#lab_social_icon_footer .social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+#lab_social_icon_footer .social {
+  -webkit-transform: scale(0.6);
+  /* Browser Variations: */
+  
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+/*
+    Multicoloured Hover Variations
+*/
+
+#lab_social_icon_footer #social-fb:hover {
+  color: #3B5998;
+}
+
+#lab_social_icon_footer #social-tw:hover {
+  color: #4099FF;
+}
+
+#lab_social_icon_footer #social-gp:hover {
+  color: #d34836;
+}
+
+#lab_social_icon_footer #social-em:hover {
+  color: #f39c12;
 }
